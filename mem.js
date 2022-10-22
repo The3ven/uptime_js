@@ -1,9 +1,6 @@
 const os = require('os');
-const process = require('process');
 
-
-
-const mem = () => {
+const memstat = () => {
     // get total memory
     var bytes_totalram = os.totalmem();
     gb_totalrma = bytes_totalram/(1024*1024*1024);
@@ -26,7 +23,7 @@ const mem = () => {
 
 
 module.exports = {
-    mem,
+    memstat
 }
 
 
